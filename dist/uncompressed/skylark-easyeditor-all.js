@@ -9121,9 +9121,10 @@ define('skylark-easyeditor/EasyEditor',[
   "skylark-utils-dom/noder",
   "skylark-utils-dom/eventer",
   "skylark-utils-dom/finder",
+  "skylark-utils-dom/datax",
   "skylark-utils-dom/query",
   "skylark-utils-dom/plugins"
-],function(skylark, langx, browser, noder, eventer,finder, $,   plugins) {
+],function(skylark, langx, browser, noder, eventer,finder, datax,$,   plugins) {
 
 
     'use strict';
@@ -10046,8 +10047,8 @@ define('skylark-easyeditor/EasyEditor',[
 
     $.fn.easyEditor = function ( options ) {
         return this.each(function () {
-            if (!$.data(this, 'plugin_easyEditor')) {
-                $.data(this, 'plugin_easyEditor',
+            if (!datax.data(this, 'plugin_easyEditor')) {
+                datax.data(this, 'plugin_easyEditor',
                 new EasyEditor( this, options ));
             }
         });
