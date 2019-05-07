@@ -928,6 +928,14 @@ define([
 	    }
 	});
 
+    $.fn.easyEditor = function ( options ) {
+        return this.each(function () {
+            if (!$.data(this, 'plugin_easyEditor')) {
+                $.data(this, 'plugin_easyEditor',
+                new EasyEditor( this, options ));
+            }
+        });
+    };
 
 	return  EasyEditor;	
 });
