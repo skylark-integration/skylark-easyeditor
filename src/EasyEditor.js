@@ -559,6 +559,21 @@ define([
 	        return !this.elementContainsSelection(this.elem);
 	    },
 
+        isActive : function(){
+            //return false;
+            return this.elementContainsSelection(this.elem);
+        },
+
+        readonly : function(readonly) {
+            if (readonly === undefined) {
+                return $(this.elem).attr('contentEditable');
+            } else {
+                $(this.elem).attr('contentEditable', readonly && true);
+                return this;
+            }
+        },
+    
+
 	    // node contains in containers or not
 	    isOrContains : function(node, container) {
 	        while (node) {
