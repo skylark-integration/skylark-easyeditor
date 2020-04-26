@@ -6,7 +6,7 @@ define([
   "skylark-domx-eventer",
   "skylark-domx-finder",
   "skylark-domx-data",
-  "skylark-domx-/query",
+  "skylark-domx-query",
   "skylark-domx-plugins"
 ],function(skylark, langx, browser, noder, eventer,finder, datax,$,   plugins) {
 
