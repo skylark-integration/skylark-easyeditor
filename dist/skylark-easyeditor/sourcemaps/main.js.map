@@ -1,1 +1,0 @@
-{"version":3,"sources":["main.js"],"names":["define","EasyEditor"],"mappings":";;;;;;;AAAAA,QACI,gBACD,SAASC,GACR,OAAOA","file":"../main.js","sourcesContent":["define([\r\n    \"./EasyEditor\"\r\n], function(EasyEditor) {\r\n    return EasyEditor;\r\n});\r\n"]}

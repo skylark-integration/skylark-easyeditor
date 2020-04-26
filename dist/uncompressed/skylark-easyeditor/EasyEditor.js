@@ -1,13 +1,13 @@
 define([
   "skylark-langx/skylark",
   "skylark-langx/langx",
-  "skylark-utils-dom/browser",
-  "skylark-utils-dom/noder",
-  "skylark-utils-dom/eventer",
-  "skylark-utils-dom/finder",
-  "skylark-utils-dom/datax",
-  "skylark-utils-dom/query",
-  "skylark-utils-dom/plugins"
+  "skylark-domx-browser",
+  "skylark-domx-noder",
+  "skylark-domx-eventer",
+  "skylark-domx-finder",
+  "skylark-domx-data",
+  "skylark-domx-/query",
+  "skylark-domx-plugins"
 ],function(skylark, langx, browser, noder, eventer,finder, datax,$,   plugins) {
 
 
@@ -558,6 +558,21 @@ define([
 	    isSelectionOutsideOfEditor : function(){
 	        return !this.elementContainsSelection(this.elem);
 	    },
+
+        isActive : function(){
+            //return false;
+            return this.elementContainsSelection(this.elem);
+        },
+
+        readonly : function(readonly) {
+            if (readonly === undefined) {
+                return $(this.elem).attr('contentEditable');
+            } else {
+                $(this.elem).attr('contentEditable', readonly && true);
+                return this;
+            }
+        },
+    
 
 	    // node contains in containers or not
 	    isOrContains : function(node, container) {

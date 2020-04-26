@@ -19,8 +19,12 @@
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json",
     "test": "grunt test"
   },
-  "files": ["examples/", "dist/", "src/","themes/"],
-  
+  "files": [
+    "examples/",
+    "dist/",
+    "src/",
+    "themes/"
+  ],
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
   "main": "./dist/js/main",
@@ -34,7 +38,7 @@
   "license": "MIT",
   "dependencies": {
     "skylark-langx": "git+https://github.com/skylarklangx/skylark-langx.git#master",
-    "skylark-utils-dom": "git+https://github.com/skylarkutils/skylark-utils-dom.git#master"
+    "skylark-domx-plugins": "git+https://github.com/skylark-domx/skylark-domx-plugins.git#master"
   },
   "engines": {
     "node": ">=0.10.1"
