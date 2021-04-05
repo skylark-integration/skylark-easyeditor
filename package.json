@@ -14,7 +14,7 @@
   "homepage": "https://github.com/skylark-integration/skylark-easyeditor/",
   "author": "Hudaokeji, Inc.",
   "scripts": {
-    "build": "sbundle build .",
+    "build": "slib build .",
     "change-version": "node grunt/change-version.js",
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json",
     "test": "grunt test"
