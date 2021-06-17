@@ -7,7 +7,7 @@ define([
   "skylark-domx-finder",
   "skylark-domx-data",
   "skylark-domx-query",
-  "skylark-domx-plugins"
+  "skylark-domx-plugins-base"
 ],function(skylark, langx, browser, noder, eventer,finder, datax,$,   plugins) {
 
 
